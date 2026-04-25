@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 def get_preprocessing_components():
     #numerical pipeline
 
-    num_imputer = SimpleImputer(strategy="mean")
+    num_imputer = SimpleImputer(strategy="median")
     scaler = StandardScaler()
 
     #categorical pipeline
